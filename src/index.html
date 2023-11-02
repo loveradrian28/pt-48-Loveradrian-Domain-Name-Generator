@@ -13,17 +13,29 @@
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
+    <div class="container-fluid">
+      <h1 class="text-center">
+        This is your very very nice very awesone very OMG Domain Name Generaitor
+        my pana.
+      </h1>
+      <p class="text-center">
+        <b>Please, enter one word you want to be in your domain name.</b>
       </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+      <div class="row d-flex justify-content-center">
+        <input
+          id="userWord"
+          class=" col-2 mx-1"
+          type="text"
+          placeholder="Write something here"
+        />
+        <button class=" col-2" onclick="generateDomainName()">
+          Generate Domain Name
+        </button>
       </div>
+      <div
+        id="DomainNameList"
+        class="d-flex justify-content-center my-3 "
+      ></div>
     </div>
   </body>
 </html>
